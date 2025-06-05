@@ -38,8 +38,23 @@ int main() {
         
 
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("======================\n");
+    printf("movimentaçao da peça de xadrez cavalo:\n");// informando qual peça ta se movimentando.
+        int cavalo = 1;//variavel loop externo
+        
+
+        do//loop externo
+        {       int cavalo2 = 1;//variavel loop interno
+                do//loop interno
+                    {   
+                        cavalo2++;
+
+                            printf("CIMA!\n");//direçao da peça
+                        }   while (cavalo2<= 2);//quantas vezes vai ser printado
+        
+            cavalo++;
+            printf("DIREITA!\n");//direçao da peça
+        } while (cavalo<= 1);//quantas vezes vai ser printado
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
